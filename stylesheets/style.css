@@ -1,0 +1,9 @@
+@import 'reset.css';
+@import 'content.css';
+@import 'responsive.css';
+@font-face {
+    font-family: "OktaNeue-Light";
+    src: url("../fonts/OktaNeue-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
