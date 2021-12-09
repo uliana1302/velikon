@@ -1,0 +1,530 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 2810px;
+  width: 1440px;
+  background: white;
+  display: block;
+  font-family: 'OktaNeue-Light', serif;
+}
+section {
+  overflow: hidden;
+}
+/* верхняя часть макета */
+.section-1 {
+  background: #0092FF;
+  position: relative;
+  height: 513px;
+}
+/* блок "знак" */
+.sign {
+  height: 252px;
+  width: 286px;
+  left: 1155px;
+  top: 0;
+  position: relative;
+}
+.sign-line {
+  height: 0;
+  width: 150px;
+  border: 1px solid black;
+  transform: rotate(90deg);
+  top: 75px;
+  left: 75px;
+  position: absolute;
+}
+.sign-rec {
+  height: 286px;
+  width: 102px;
+  border: 1px solid black;
+  transform: rotate(90deg);
+  top: 60px;
+  left: 90px;
+  position: absolute;
+}
+.sign-text {
+  width: 215px;
+  position: absolute;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  top: 172px;
+  left: 43px;
+}
+/* герой */
+.character {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: white;
+  top: -131px;
+  left: 1197px;
+  position: relative;
+}
+/* блок "крыша" */
+.roof {
+  top: -200px;
+  position: relative;
+}
+.roof-back {
+  top: 0px;
+  position: absolute;
+}
+.roof-rec-1 {
+  height: 46px;
+  width: 900px;
+  background: black;
+  transform: rotate(152deg);
+  top: 173px;
+  left: -173px;
+  position: absolute;
+}
+.roof-rec-2 {
+  height: 46px;
+  width: 905px;
+  background: black;
+  transform: rotate(28deg);
+  top: 173px;
+  left: 600px;
+  position: absolute;
+}
+/* контейнер 1 */
+.box-1 {
+  height: 246px;
+  width: 814px;
+  left: 0px;
+  top: 10px;
+  position: relative;
+}
+.box-1-h-c {
+  height: 245px;
+  width: 451px;
+  top: -27px;
+  left: 363px;
+  position: absolute;
+}
+.box-1-shelf {
+  height: 18px;
+  width: 638px;
+  background: black;
+  top: 104px;
+  left: 35px;
+  position: absolute;
+}
+.box-1-figure {
+  top: 65px;
+  left: 627px;
+  position: absolute;
+}
+.box-1-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 37px;
+  left: 783px;
+  position: absolute;
+}
+.box-1-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 10px;
+  left: 807px;
+}
+.box-3-img {
+  top: -26px;
+  left: 1030px;
+  position: absolute;
+}
+/* середина макета */
+.section-2 {
+  background: white;
+  position: relative;
+  height: 2176px;
+}
+/* контейнер 2 */
+.box-2 {
+  height: 487px;
+  width: 758px;
+  border: 1px solid black;
+  top: 60px;
+  left: -8px;
+  position: relative;
+}
+.box-2-shelf {
+  height: 18px;
+  width: 521px;
+  background: black;
+  top: 377px;
+  left: 372px;
+  position: absolute;
+}
+.box-2-img {
+  height: 487px;
+  width: 631px;
+  top: 0;
+  left: 49px;
+  position: absolute;
+}
+.box-2-can-1 {
+  height: 136px;
+  width: 136px;
+  border-radius: 50%;
+  background: black;
+  top: 351px;
+  left: 187px;
+  position: absolute;
+}
+.box-2-can-2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: white;
+  top: 395px;
+  left: 232px;
+  position: absolute;
+}
+.box-2-can-3 {
+  height: 26px;
+  width: 192px;
+  background: black;
+  top: 405px;
+  left: 0;
+  position: absolute;
+}
+.box-2-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: -28px;
+  left: 49px;
+  position: absolute;
+}
+.box-2-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: -58px;
+  left: 69px;
+}
+/* контейнер 3 */
+.box-3 {
+  height: 150px;
+  width: 619px;
+  left: 690px;
+  top: -489px;
+  position: relative;
+}
+.box-3-img-1 {
+  top: -244px;
+  left: 340px;
+  position: absolute;
+}
+.box-3-shelf {
+  height: 18px;
+  width: 616px;
+  background: black;
+  top: 50px;
+  left: 0;
+  position: absolute;
+}
+.box-3-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 94px;
+  left: 484px;
+  position: absolute;
+}
+.box-3-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 122px;
+  left: 483px;
+}
+/* контейнер без великана 9 */
+.box-9 {
+  height: 95px;
+  width: 346px;
+  border: 1px solid black;
+  top: -12px;
+  left: -32px;
+  position: relative;
+}
+/* контейнер 4 */
+.box-4 {
+  height: 954px;
+  width: 866px;
+  left: 673px;
+  top: -630px;
+  position: relative;
+}
+.box-4-img-1 {
+  top: -10px;
+  left: 150px;
+  position: absolute;
+}
+.box-4-img-2 {
+  top: 195px;
+  left: 263px;
+  position: absolute;
+}
+.box-4-img-3 {
+  top: 748px;
+  left: 151px;
+  position: absolute;
+}
+.box-4-shelf {
+  height: 18px;
+  width: 765px;
+  background: black;
+  top: 926px;
+  left: 13px;
+  position: absolute;
+}
+.box-4-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 242px;
+  left: 149px;
+  position: absolute;
+}
+.box-4-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 208px;
+  left: 174px;
+}
+/* контейнер 5 */
+.box-5 {
+  height: 450px;
+  width: 991px;
+  left: 0;
+  top: -912px;
+  position: relative;
+}
+.box-5-img-1 {
+  top: 2px;
+  left: -1px;
+  position: absolute;
+}
+.box-5-img-2 {
+  top: 1px;
+  left: -2px;
+  position: absolute;
+}
+.box-5-img-3 {
+  top: 335px;
+  left: 770px;
+  position: absolute;
+}
+.box-5-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: -38px;
+  left: 363px;
+  position: absolute;
+}
+.box-5-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: -69px;
+  left: 387px;
+}
+/* контейнер 6 */
+.box-6 {
+  height: 499px;
+  width: 961px;
+  left: 555px;
+  top: -1080px;
+  position: relative;
+}
+.box-6-circle {
+  height: 422px;
+  width: 422px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 19px;
+  left: 542px;
+  position: absolute;
+}
+.box-6-img {
+  top: 219px;
+  left: 3px;
+  position: absolute;
+}
+.box-6-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 436px;
+  left: 354px;
+  position: absolute;
+}
+.box-6-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 452px;
+  left: 382px;
+}
+/* контейнер 7 */
+.box-7 {
+  height: 859px;
+  width: 602px;
+  left: -4px;
+  top: -1389px;
+  position: relative;
+}
+.box-7-img-1 {
+  top: 309px;
+  left: 59px;
+  position: absolute;
+}
+.box-7-img-2 {
+  top: -10px;
+  left: 58px;
+  position: absolute;
+}
+.box-7-img-3 {
+  top: 96px;
+  left: 94px;
+  position: absolute;
+}
+.box-7-shelf {
+  height: 18px;
+  width: 536px;
+  background: black;
+  top: 94px;
+  left: -4px;
+  position: absolute;
+}
+.box-7-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 819px;
+  left: 140px;
+  position: absolute;
+}
+.box-7-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 840px;
+  left: 115px;
+}
+/* контейнер 8 */
+.box-8 {
+  height: 702px;
+  width: 876px;
+  left: 595px;
+  top: -1913px;
+  position: relative;
+}
+.box-8-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: black;
+  top: 349px;
+  left: 123px;
+  position: absolute;
+}
+.box-8-img-1 {
+  top: 15px;
+  left: 95px;
+  position: absolute;
+}
+.box-8-img-2 {
+  top: -157px;
+  left: 107px;
+  position: absolute;
+}
+.box-8-c {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  top: 299px;
+  left: 523px;
+  position: absolute;
+}
+.box-8-n {
+  width: 13px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 311px;
+  left: 548px;
+}
+/* контейнер без великана 10 */
+.box-10 {
+  height: 95px;
+  width: 285px;
+  border: 1px solid black;
+  top: -2183px;
+  left: 1176px;
+  position: relative;
+}
+.box-10-shelf {
+  height: 18px;
+  width: 790px;
+  background: black;
+  top: 48px;
+  left: -529px;
+  position: absolute;
+}
+/* футер */
+.section-3 {
+  background: white;
+  position: relative;
+  height: 119px;
+}
+.section-3 p:nth-of-type(1) {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 52px;
+  left: 55px;
+}
+.section-3 p:nth-of-type(2) {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 52px;
+  left: 691px;
+}
+.section-3 p:nth-of-type(3) {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 52px;
+  left: 1177px;
+}
+.section-3 p:nth-of-type(4) {
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 52px;
+  left: 1350px;
+}
