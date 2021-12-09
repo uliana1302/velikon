@@ -1,0 +1,18 @@
+/* десктоп шириной 1920px */
+@media all and (min-device-width: 1450px) and (max-device-width: 1920px) {
+ body {font-size: 32px; line-height: 38px;}
+}
+/* десктоп шириной 1024px */
+@media all and (min-device-width: 1024px) and (max-device-width: 1365px) {
+ body {font-size: 18px; line-height: 21px;}
+}
+/* планшет шириной 768px */
+@media all and (min-device-width: 768px) and (max-device-width: 1023px) {
+  /* .section-1, .section-2, .section-3 {top: calc(100%-110px);} */
+  /* .sign {left: 512px;}
+  .character {left: 554px;} */
+}
+/* андроид шириной 360px */
+@media all and (min-device-width: 360px) and (max-device-width: 413px) {
+ body {font-size: 16px; line-height: 18px;}
+}
