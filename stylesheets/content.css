@@ -1,3 +1,4 @@
+/* стили элементов */
 body {
   margin: 0 auto;
   padding: 0;
@@ -12,6 +13,25 @@ body {
 section {
   overflow: hidden;
 }
+/* стартовый экран */
+/* .cover {
+  background: #FFEC00;
+  position: relative;
+  height: 2810px;
+  top: -2810px;
+  left: 0;
+  animation: cover 4s ease-in;
+}
+.cover-text {
+  width: 300px;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  top: 420px;
+  left: 611px;
+  animation: cover-text 4s ease-in;
+} */
 /* верхняя часть макета */
 .section-1 {
   background: #0092FF;
@@ -55,13 +75,17 @@ section {
 }
 /* герой */
 .character {
+  animation: character_x 6s cubic-bezier(.37,.55,.49,.67);
+}
+.shape {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background: white;
-  top: -131px;
+  top: -283px;
   left: 1197px;
   position: relative;
+  animation: character_y 6s linear;
 }
 /* блок "крыша" */
 .roof {
@@ -529,4 +553,27 @@ section {
   color: black;
   top: 52px;
   left: 1350px;
+}
+/* анимация */
+/* @keyframes cover {
+  0%, 100% {opacity: 0;}
+  25%, 75% {opacity: 1;}
+}
+@keyframes cover-text {
+  0%, 25% 100% {opacity: 0;}
+  35%, 75% {opacity: 1;}
+} */
+@keyframes character_y {
+  0% {transform: translateY(-150px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  15% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  25% {transform: translateY(-75px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  32.5% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  40% {transform: translateY(0); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  45% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  50% {transform: translateY(56px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  56% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  60% {transform: translateY(112px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  64% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+  66% {transform: translateY(130px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
+  70%, 100% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
 }
