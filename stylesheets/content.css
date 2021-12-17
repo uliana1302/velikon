@@ -13,30 +13,25 @@ body {
 section {
   overflow: hidden;
 }
-/* стартовый экран */
-/* .cover {
-  background: #FFEC00;
+/* герой */
+.character {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: black;
+  top: -127px;
+  left: 280px;
   position: relative;
-  height: 2810px;
-  top: -2810px;
-  left: 0;
-  animation: cover 4s ease-in;
+  z-index: 9999;
+  offset-path: path("M929 264C751.666 210 363.4 187.6 229 530C223.666 510.667 211.8 483.6 207 530C194.333 370 207.8 55.6 363 78C463 -51.3333 673.4 -110 715 690C711.667 668.667 702.6 638.8 693 690C602.333 562.667 354.6 384.4 89 690C85 673.333 75.4 650 69 690C261.667 601.333 669.4 529.2 759 950C759 918 763 870 779 934C574.333 870 173.399 877.2 207 1418C203.666 1399.33 195 1373.2 187 1418C392.333 1342 814.6 1315.6 861 1818C853 1795.33 839.4 1765.6 849 1828C838.333 1851.33 820.2 1912.4 833 1970C827.667 1959.33 816.2 1944.4 813 1970C639.667 1856 271.8 1750 187 2238C193.667 2213.33 207 2178.8 207 2238C317 2160.67 586.2 2066.8 783 2310C782.333 2290.67 784.2 2263.6 797 2310C540.333 2225.33 25.4 2220 19 2876C15 2859.33 5.8 2836 1 2876");
+  animation: move 30s linear;
 }
-.cover-text {
-  width: 300px;
-  position: relative;
-  font-size: 24px;
-  line-height: 28px;
-  color: black;
-  top: 420px;
-  left: 611px;
-  animation: cover-text 4s ease-in;
-} */
 /* верхняя часть макета */
 .section-1 {
   background: #0092FF;
   position: relative;
-  height: 513px;
+  height: 543px;
+  top: -30px;
 }
 /* блок "знак" */
 .sign {
@@ -73,27 +68,13 @@ section {
   top: 172px;
   left: 43px;
 }
-/* герой */
-.character {
-  animation: character_x 6s cubic-bezier(.37,.55,.49,.67);
-}
-.shape {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: white;
-  top: -283px;
-  left: 1197px;
-  position: relative;
-  animation: character_y 6s linear;
-}
 /* блок "крыша" */
 .roof {
-  top: -200px;
+  top: -170px;
   position: relative;
 }
 .roof-back {
-  top: 0px;
+  top: 30px;
   position: absolute;
 }
 .roof-rec-1 {
@@ -101,7 +82,7 @@ section {
   width: 900px;
   background: black;
   transform: rotate(152deg);
-  top: 173px;
+  top: 203px;
   left: -173px;
   position: absolute;
 }
@@ -110,7 +91,7 @@ section {
   width: 905px;
   background: black;
   transform: rotate(28deg);
-  top: 173px;
+  top: 203px;
   left: 600px;
   position: absolute;
 }
@@ -119,13 +100,13 @@ section {
   height: 246px;
   width: 814px;
   left: 0px;
-  top: 10px;
+  top: 40px;
   position: relative;
 }
 .box-1-h-c {
   height: 245px;
   width: 451px;
-  top: -27px;
+  top: 3px;
   left: 363px;
   position: absolute;
 }
@@ -133,12 +114,12 @@ section {
   height: 18px;
   width: 638px;
   background: black;
-  top: 104px;
+  top: 134px;
   left: 35px;
   position: absolute;
 }
 .box-1-figure {
-  top: 65px;
+  top: 95px;
   left: 627px;
   position: absolute;
 }
@@ -147,7 +128,7 @@ section {
   width: 10px;
   border-radius: 50%;
   background: black;
-  top: 37px;
+  top: 67px;
   left: 783px;
   position: absolute;
 }
@@ -156,11 +137,11 @@ section {
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 10px;
+  top: 40px;
   left: 807px;
 }
 .box-3-img {
-  top: -26px;
+  top: 4px;
   left: 1030px;
   position: absolute;
 }
@@ -169,6 +150,7 @@ section {
   background: white;
   position: relative;
   height: 2176px;
+  top: -30px;
 }
 /* контейнер 2 */
 .box-2 {
@@ -525,6 +507,7 @@ section {
   background: white;
   position: relative;
   height: 119px;
+  top: -30px;
 }
 .section-3 p:nth-of-type(1) {
   position: absolute;
@@ -555,25 +538,6 @@ section {
   left: 1350px;
 }
 /* анимация */
-/* @keyframes cover {
-  0%, 100% {opacity: 0;}
-  25%, 75% {opacity: 1;}
-}
-@keyframes cover-text {
-  0%, 25% 100% {opacity: 0;}
-  35%, 75% {opacity: 1;}
-} */
-@keyframes character_y {
-  0% {transform: translateY(-150px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  15% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
-  25% {transform: translateY(-75px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  32.5% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
-  40% {transform: translateY(0); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  45% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
-  50% {transform: translateY(56px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  56% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
-  60% {transform: translateY(112px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  64% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
-  66% {transform: translateY(130px); animation-timing-function: cubic-bezier(.51,.01,.79,.02);}
-  70%, 100% {transform: translateY(150px); animation-timing-function: cubic-bezier(.19,1,.7,1);}
+@keyframes move {
+  to {offset-distance: 100%;}
 }
