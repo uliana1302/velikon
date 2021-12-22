@@ -24,7 +24,7 @@ section {
   position: relative;
   z-index: 9999;
   offset-path: path("M929 264C751.666 210 363.4 187.6 229 530C223.666 510.667 211.8 483.6 207 530C194.333 370 207.8 55.6 363 78C463 -51.3333 673.4 -110 715 690C711.667 668.667 702.6 638.8 693 690C602.333 562.667 354.6 384.4 89 690C85 673.333 75.4 650 69 690C261.667 601.333 669.4 529.2 759 950C759 918 763 870 779 934C574.333 870 173.399 877.2 207 1418C203.666 1399.33 195 1373.2 187 1418C392.333 1342 814.6 1315.6 861 1818C853 1795.33 839.4 1765.6 849 1828C838.333 1851.33 820.2 1912.4 833 1970C827.667 1959.33 816.2 1944.4 813 1970C639.667 1856 271.8 1750 187 2238C193.667 2213.33 207 2178.8 207 2238C317 2160.67 586.2 2066.8 783 2310C782.333 2290.67 784.2 2263.6 797 2310C540.333 2225.33 25.4 2220 19 2876C15 2859.33 5.8 2836 1 2876");
-  animation: move 30s linear;
+  animation: move 20s linear infinite;
 }
 /* верхняя часть макета */
 .section-1 {
@@ -58,6 +58,7 @@ section {
   top: 60px;
   left: 90px;
   position: absolute;
+  animation: sign-rec 1s linear infinite;
 }
 .sign-text {
   width: 215px;
@@ -67,6 +68,7 @@ section {
   color: white;
   top: 172px;
   left: 43px;
+  animation: sign-text 1s linear infinite;
 }
 /* блок "крыша" */
 .roof {
@@ -112,16 +114,18 @@ section {
 }
 .box-1-shelf {
   height: 18px;
-  width: 638px;
+  width: 608px;
   background: black;
   top: 134px;
-  left: 35px;
+  left: 65px;
   position: absolute;
+  animation: box-1-shelf 2s linear infinite;
 }
 .box-1-figure {
   top: 95px;
   left: 627px;
-  position: absolute;
+  position: relative;
+  animation: figure 2s linear infinite;
 }
 .box-1-c {
   height: 10px;
@@ -131,14 +135,27 @@ section {
   top: 67px;
   left: 783px;
   position: absolute;
+  animation: box-1-c 2s 1.5s alternate infinite;
 }
 .box-1-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
+  top: 34px;
+  left: 793px;
+  padding: 6px 0 0 15px;
+  animation: box-1-n 2s 1.5s alternate infinite;
+}
+.box-1-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: white;
   top: 40px;
-  left: 807px;
+  left: 818px;
+  opacity: 0;
+  animation: box-1-t 2s 1.5s alternate infinite;
 }
 .box-3-img {
   top: 4px;
@@ -160,6 +177,7 @@ section {
   top: 60px;
   left: -8px;
   position: relative;
+  animation: box-2 1s 6.7s linear infinite;
 }
 .box-2-shelf {
   height: 18px;
@@ -175,6 +193,42 @@ section {
   top: 0;
   left: 49px;
   position: absolute;
+  animation: box-2-img 2s ease infinite;
+}
+.w-1 {
+  position: relative;
+  top: 293px;
+  left: 311px;
+  opacity: 0;
+  animation: w-1 1.5s steps(1) infinite;
+}
+.w-2 {
+  position: relative;
+  top: 174px;
+  left: 319px;
+  opacity: 0;
+  animation: w-2 1.5s steps(1) infinite;
+}
+.w-3 {
+  position: relative;
+  top: 37px;
+  left: 327px;
+  opacity: 0;
+  animation: w-3 1.5s steps(1) infinite;
+}
+.w-4 {
+  position: relative;
+  top: -104px;
+  left: 335px;
+  opacity: 0;
+  animation: w-4 1.5s steps(1) infinite;
+}
+.w-5 {
+  position: relative;
+  top: -251px;
+  left: 341px;
+  opacity: 0;
+  animation: w-5 1.5s steps(1) infinite;
 }
 .box-2-can-1 {
   height: 136px;
@@ -184,6 +238,7 @@ section {
   top: 351px;
   left: 187px;
   position: absolute;
+  animation: box-2-can-1 1.5s ease infinite;
 }
 .box-2-can-2 {
   height: 45px;
@@ -193,14 +248,16 @@ section {
   top: 395px;
   left: 232px;
   position: absolute;
+  animation: box-2-can-2 1.5s ease infinite;
 }
 .box-2-can-3 {
   height: 26px;
-  width: 192px;
+  width: 300px;
   background: black;
   top: 405px;
-  left: 0;
+  left: -80px;
   position: absolute;
+  animation: box-2-can-3 1.5s ease infinite;
 }
 .box-2-c {
   height: 10px;
@@ -210,14 +267,26 @@ section {
   top: -28px;
   left: 49px;
   position: absolute;
+  animation: box-2-c 2s 4s alternate infinite;
 }
 .box-2-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: -58px;
-  left: 69px;
+  top: -61px;
+  left: 59px;
+  animation: box-2-n 2s 4s alternate infinite;
+}
+.box-2-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: -53px;
+  left: 102px;
+  opacity: 0;
+  animation: box-2-t 2s 4s alternate infinite;
 }
 /* контейнер 3 */
 .box-3 {
@@ -231,6 +300,17 @@ section {
   top: -244px;
   left: 340px;
   position: absolute;
+}
+.box-3-img-2 {
+  top: 407px;
+  left: 1030px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10000;
+}
+.box-3-img-2:hover {
+  animation: box-3-img-2 2s linear infinite;
+  animation-play-state: running;
 }
 .box-3-shelf {
   height: 18px;
@@ -248,6 +328,7 @@ section {
   top: 94px;
   left: 484px;
   position: absolute;
+  animation: box-3-c 2s 3.5s alternate infinite;
 }
 .box-3-n {
   width: 13px;
@@ -257,14 +338,39 @@ section {
   top: 122px;
   left: 483px;
 }
+.box-3-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 122px;
+  left: 503px;
+  opacity: 0;
+  animation: box-3-t 3s 3.5s linear infinite;
+}
 /* контейнер без великана 9 */
 .box-9 {
-  height: 95px;
+  height: 40px;
   width: 346px;
   border: 1px solid black;
-  top: -12px;
+  top: -16px;
   left: -32px;
   position: relative;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  animation: box-9 10s linear infinite;
+}
+.box-9-text {
+  width: 1000px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  opacity: 0;
+}
+.box-9-text:hover {
+  animation: box-9-text 4s linear infinite;
+  animation-play-state: running;
 }
 /* контейнер 4 */
 .box-4 {
@@ -278,16 +384,33 @@ section {
   top: -10px;
   left: 150px;
   position: absolute;
+  animation: box-4-img-1 3s linear infinite;
+}
+.box-4-img-1-1 {
+  top: -10px;
+  left: 150px;
+  position: absolute;
+  opacity: 0;
+  animation: box-4-img-1-1 3s linear infinite;
 }
 .box-4-img-2 {
   top: 195px;
   left: 263px;
   position: absolute;
+  animation: box-4-img-2 3s linear infinite;
+}
+.box-4-img-2-1 {
+  top: 195px;
+  left: 263px;
+  position: absolute;
+  opacity: 0;
+  animation: box-4-img-2-1 3s linear infinite;
 }
 .box-4-img-3 {
   top: 748px;
   left: 151px;
   position: absolute;
+  animation: box-4-img-3 3s linear infinite;
 }
 .box-4-shelf {
   height: 18px;
@@ -314,6 +437,15 @@ section {
   top: 208px;
   left: 174px;
 }
+.box-4-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 208px;
+  left: 192px;
+  opacity: 0;
+}
 /* контейнер 5 */
 .box-5 {
   height: 450px;
@@ -326,6 +458,14 @@ section {
   top: 2px;
   left: -1px;
   position: absolute;
+  animation: box-5-img-1 1s linear infinite;
+}
+.box-5-img-1-1 {
+  top: 1px;
+  left: -2px;
+  position: absolute;
+  opacity: 0;
+  animation: box-5-img-1-1 1s linear infinite;
 }
 .box-5-img-2 {
   top: 1px;
@@ -354,6 +494,15 @@ section {
   top: -69px;
   left: 387px;
 }
+.box-5-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: -69px;
+  left: 407px;
+  opacity: 0;
+}
 /* контейнер 6 */
 .box-6 {
   height: 499px;
@@ -371,10 +520,18 @@ section {
   left: 542px;
   position: absolute;
 }
+.box-6-circle:hover {
+  animation: box-6-circle 4s linear infinite;
+  animation-play-state: running;
+}
 .box-6-img {
   top: 219px;
   left: 3px;
   position: absolute;
+}
+.box-6-img:hover {
+  animation: box-6-img 1s linear infinite;
+  animation-play-state: running;
 }
 .box-6-c {
   height: 10px;
@@ -393,6 +550,15 @@ section {
   top: 452px;
   left: 382px;
 }
+.box-6-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: 452px;
+  left: 400px;
+  opacity: 0;
+}
 /* контейнер 7 */
 .box-7 {
   height: 859px;
@@ -405,16 +571,32 @@ section {
   top: 309px;
   left: 59px;
   position: absolute;
+  animation: box-7-img-1 2s linear infinite;
+}
+.box-7-img-1:hover {
+  animation-play-state: paused;
 }
 .box-7-img-2 {
   top: -10px;
   left: 58px;
   position: absolute;
+  animation: box-7-img-2 2s 15.5s linear infinite;
+}
+.box-7-img-2-1 {
+  top: -10px;
+  left: 58px;
+  opacity: 0;
+  position: absolute;
+  animation: box-7-img-2-1 2s 15.5s linear infinite;
 }
 .box-7-img-3 {
   top: 96px;
   left: 94px;
   position: absolute;
+  animation: box-7-img-3 2s linear infinite;
+}
+.box-7-img-3:hover {
+  animation-play-state: paused;
 }
 .box-7-shelf {
   height: 18px;
@@ -441,6 +623,15 @@ section {
   top: 840px;
   left: 115px;
 }
+.box-7-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  top: 840px;
+  left: 130px;
+  opacity: 0;
+}
 /* контейнер 8 */
 .box-8 {
   height: 702px;
@@ -457,11 +648,20 @@ section {
   top: 349px;
   left: 123px;
   position: absolute;
+  animation: box-8-circle 3s 17s ease infinite;
 }
 .box-8-img-1 {
   top: 15px;
   left: 95px;
   position: absolute;
+  animation: box-8-img-1 3s 17s linear infinite;
+}
+.box-8-img-1-1 {
+  top: 15px;
+  left: 95px;
+  opacity: 0;
+  position: absolute;
+  animation: box-8-img-1-1 3s 17s linear infinite;
 }
 .box-8-img-2 {
   top: -157px;
@@ -485,21 +685,40 @@ section {
   top: 311px;
   left: 548px;
 }
+.box-8-t {
+  width: 240px;
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  top: 311px;
+  left: 566px;
+  opacity: 0;
+}
 /* контейнер без великана 10 */
 .box-10 {
-  height: 95px;
-  width: 285px;
+  height: 58px;
+  width: 623px;
   border: 1px solid black;
   top: -2183px;
-  left: 1176px;
+  left: 819px;
   position: relative;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.box-10-text {
+  width: 800px;
+  position: relative;
+  font-size: 24px;
+  color: black;
+  animation: box-10-text 5s linear infinite;
 }
 .box-10-shelf {
   height: 18px;
   width: 790px;
   background: black;
   top: 48px;
-  left: -529px;
+  left: -150px;
   position: absolute;
 }
 /* футер */
@@ -538,6 +757,164 @@ section {
   left: 1350px;
 }
 /* анимация */
+/* герой */
 @keyframes move {
   to {offset-distance: 100%;}
+}
+/* знак */
+@keyframes sign-rec {
+  30% {background: white;}
+}
+@keyframes sign-text {
+  30% {color: black;}
+}
+/* полка + фигурка */
+@keyframes box-1-shelf {
+  0%, 100% {top: 133px;}
+  25% {top: 110px;}
+  50% {top: 157px; left: 30px; width: 643px;}
+}
+@keyframes figure {
+  0%, 100% {top: 95px;}
+  25% {top: 71px;}
+  50% {top: 119px;}
+}
+/* подпись_1 */
+@keyframes box-1-c {
+  3%, 100% {height: 15px; width: 15px; background: #0092FF;}
+}
+@keyframes box-1-n {
+  10%, 100% {color: white; padding: 6px 120px 10px 14px; background: #0092FF;}
+}
+@keyframes box-1-t {
+  10%, 100% {opacity: 1;}
+}
+/* подпись_2 */
+@keyframes box-2-c {
+  3%, 100% {height: 15px; width: 15px;}
+}
+@keyframes box-2-n {
+  10%, 100% {color: white; padding: 6px 133px 10px 14px; background: black;}
+}
+@keyframes box-2-t {
+  3%, 100% {opacity: 1;}
+}
+/* подпись_3 */
+@keyframes box-3-t {
+  0%, 100% {opacity: 1;}
+}
+/* великан_контейнер 3 */
+@keyframes box-3-img-2 {
+  0%, 100% {opacity: 1;}
+}
+/* контейнер 2 */
+@keyframes box-2 {
+  0%, 100% {border: 3px solid black;}
+}
+@keyframes box-2-img {
+  0%, 100% {left: 49px;}
+  25%, 75% {left: 3px;}
+  50% {left: 120px;}
+}
+@keyframes box-2-can-1 {
+  0%, 100% {left: 187px;}
+  50% {left: 253px;}
+}
+@keyframes box-2-can-2 {
+  0%, 100% {left: 232px;}
+  50% {left: 298px;}
+}
+@keyframes box-2-can-3 {
+  0%, 100% {left: -80;}
+  50% {left: -14px;}
+}
+@keyframes w-1 {
+  0%, 100% {opacity: 1;}
+}
+@keyframes w-2 {
+  20%, 100% {opacity: 1;}
+}
+@keyframes w-3 {
+  40%, 100% {opacity: 1;}
+}
+@keyframes w-4 {
+  60%, 100% {opacity: 1;}
+}
+@keyframes w-5 {
+  80%, 100% {opacity: 1;}
+}
+/* контейнер 4 */
+@keyframes box-4-img-1 {
+  0% {opacity: 1;}
+  49% {opacity: 1;}
+  50%, 100% {opacity: 0;}
+}
+@keyframes box-4-img-1-1 {
+  0% {opacity: 0;}
+  49% {opacity: 0;}
+  50%, 100% {opacity: 1;}
+}
+@keyframes box-4-img-2 {
+  0% {opacity: 1;}
+  49% {opacity: 1;}
+  50%, 100% {opacity: 0;}
+}
+@keyframes box-4-img-2-1 {
+  0% {opacity: 0;}
+  49% {opacity: 0;}
+  50%, 100% {opacity: 1;}
+}
+@keyframes box-4-img-3 {
+  0% {transform:rotate(0); left: 151px; opacity: 1;}
+  49% {opacity: 1;}
+  50%, 100% {transform: rotate(110deg); opacity: 0; left: 210px;}
+}
+@keyframes box-9 {
+  5%, 100% {border: 3px solid black;}
+}
+@keyframes box-9-text {
+  0% {transform: translate(60px, 0); opacity: 1;}
+  100% {transform:translate(-100%, 0);opacity: 1;}
+}
+@keyframes box-5-img-1 {
+  0%, 49% {opacity: 1;}
+  50%, 100% {opacity: 0;}
+}
+@keyframes box-5-img-1-1 {
+  0%, 49% {opacity: 0;}
+  50%, 100% {opacity: 1;}
+}
+@keyframes box-6-circle {
+  0%, 100% {background: black;}
+}
+@keyframes box-6-img {
+  0%, 100% {top: 219px;}
+  50% {top: 160px;}
+}
+@keyframes box-7-img-1 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes box-7-img-2 {
+  0%, 100% {opacity: 0;}
+}
+@keyframes box-7-img-2-1 {
+  0%, 100% {opacity: 1;}
+}
+@keyframes box-7-img-3 {
+  0%, 100% {left: 94px;}
+  50% {left: 362px;}
+}
+@keyframes box-8-img-1 {
+  0%, 100% {opacity: 0;}
+}
+@keyframes box-8-img-1-1 {
+  0%, 100% {opacity: 1;}
+}
+@keyframes box-8-circle {7% {background: white; top: 349px; left: 123px;}
+  100% {background: white; top: 122px; left: 785px;}
+}
+@keyframes box-10-text {
+  0% {transform: translate(0, 0);}
+  100% {transform:translate(-100%, 0);}
 }
