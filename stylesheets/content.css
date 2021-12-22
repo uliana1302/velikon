@@ -112,6 +112,15 @@ section {
   left: 363px;
   position: absolute;
 }
+.box-1-h-c-1 {
+  height: 245px;
+  width: 451px;
+  top: 3px;
+  left: 363px;
+  opacity: 0;
+  position: absolute;
+  animation: box-1-h-c-1 2s  1.5s linear infinite;
+}
 .box-1-shelf {
   height: 18px;
   width: 608px;
@@ -135,17 +144,26 @@ section {
   top: 67px;
   left: 783px;
   position: absolute;
-  animation: box-1-c 2s 1.5s alternate infinite;
+  animation: box-1-c 5s 1.5s linear;
+}
+.box-1-nt {
+  height: 38px;
+  width: 156px;
+  background: #0092FF;
+  top: -2px;
+  left: 793px;
+  opacity: 0;
+  position: relative;
+  animation: box-1-nt 5s 1.5s linear;
 }
 .box-1-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 34px;
-  left: 793px;
-  padding: 6px 0 0 15px;
-  animation: box-1-n 2s 1.5s alternate infinite;
+  top: 40px;
+  left: 804px;
+  animation: box-1-n 5s 1.5s linear;
 }
 .box-1-t {
   width: 240px;
@@ -155,12 +173,19 @@ section {
   top: 40px;
   left: 818px;
   opacity: 0;
-  animation: box-1-t 2s 1.5s alternate infinite;
+  animation: box-1-t 5s 1.5s linear;
 }
 .box-3-img {
   top: 4px;
   left: 1030px;
   position: absolute;
+}
+.box-3-img1-1 {
+  top: 4px;
+  left: 1030px;
+  position: absolute;
+  opacity: 0;
+  animation: box-3-img-1 2s 5.2s linear;
 }
 /* середина макета */
 .section-2 {
@@ -267,26 +292,36 @@ section {
   top: -28px;
   left: 49px;
   position: absolute;
-  animation: box-2-c 2s 4s alternate infinite;
+  animation: box-2-c 5s 6.5s linear;
+}
+.box-2-nt {
+  height: 38px;
+  width: 156px;
+  background: black;
+  top: -462px;
+  left: 57px;
+  opacity: 0;
+  position: relative;
+  animation: box-2-nt 5s 6.5s linear;
 }
 .box-2-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: -61px;
-  left: 59px;
-  animation: box-2-n 2s 4s alternate infinite;
+  top: -54px;
+  left: 74px;
+  animation: box-2-n 5s 6.5s linear;
 }
 .box-2-t {
   width: 240px;
   position: absolute;
   font-size: 24px;
   color: white;
-  top: -53px;
-  left: 102px;
+  top: -54px;
+  left: 95px;
   opacity: 0;
-  animation: box-2-t 2s 4s alternate infinite;
+  animation: box-2-t 5s 6.5s linear;
 }
 /* контейнер 3 */
 .box-3 {
@@ -301,9 +336,16 @@ section {
   left: 340px;
   position: absolute;
 }
+.box-3-img-1-1 {
+  top: -244px;
+  left: 340px;
+  position: absolute;
+  opacity: 0;
+  animation: box-3-img-1 2s 5.2s linear;
+}
 .box-3-img-2 {
-  top: 407px;
-  left: 1030px;
+  top: 404px;
+  left: 1032px;
   opacity: 0;
   position: absolute;
   z-index: 10000;
@@ -314,10 +356,10 @@ section {
 }
 .box-3-shelf {
   height: 18px;
-  width: 616px;
+  width: 419px;
   background: black;
-  top: 50px;
-  left: 0;
+  top: 43px;
+  left: 170px;
   position: absolute;
 }
 .box-3-c {
@@ -325,28 +367,28 @@ section {
   width: 10px;
   border-radius: 50%;
   background: black;
-  top: 94px;
-  left: 484px;
+  top: 80px;
+  left: 368px;
   position: absolute;
-  animation: box-3-c 2s 3.5s alternate infinite;
+  animation: box-3-c 3s 5s linear infinite;
 }
 .box-3-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 122px;
-  left: 483px;
+  top: 107px;
+  left: 367px;
 }
 .box-3-t {
   width: 240px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 122px;
-  left: 503px;
+  top: 107px;
+  left: 391px;
   opacity: 0;
-  animation: box-3-t 3s 3.5s linear infinite;
+  animation: box-3-t 3s 5s linear infinite;
 }
 /* контейнер без великана 9 */
 .box-9 {
@@ -356,9 +398,8 @@ section {
   top: -16px;
   left: -32px;
   position: relative;
-  padding: 15px 0;
-  margin-bottom: 10px;
   overflow: hidden;
+  padding: 15px 0;
   animation: box-9 10s linear infinite;
 }
 .box-9-text {
@@ -420,6 +461,16 @@ section {
   left: 13px;
   position: absolute;
 }
+.box-4-nt {
+  height: 38px;
+  width: 247px;
+  background: white;
+  top: 211px;
+  left: 155px;
+  opacity: 0;
+  position: relative;
+  animation: box-4-nt 5s 8.5s linear;
+}
 .box-4-c {
   height: 10px;
   width: 10px;
@@ -428,6 +479,7 @@ section {
   top: 242px;
   left: 149px;
   position: absolute;
+  animation: box-4-c 5s 8.5s linear;
 }
 .box-4-n {
   width: 13px;
@@ -436,6 +488,7 @@ section {
   color: black;
   top: 208px;
   left: 174px;
+  animation: box-4-n 5s 8.5s linear;
 }
 .box-4-t {
   width: 240px;
@@ -445,6 +498,7 @@ section {
   top: 208px;
   left: 192px;
   opacity: 0;
+  animation: box-4-t 5s 8.5s linear;
 }
 /* контейнер 5 */
 .box-5 {
@@ -477,6 +531,16 @@ section {
   left: 770px;
   position: absolute;
 }
+.box-5-nt {
+  height: 38px;
+  width: 170px;
+  background: #0092FF;
+  top: -68px;
+  left: 372px;
+  opacity: 0;
+  position: relative;
+  animation: box-5-nt 5s 11s linear;
+}
 .box-5-c {
   height: 10px;
   width: 10px;
@@ -485,6 +549,7 @@ section {
   top: -38px;
   left: 363px;
   position: absolute;
+  animation: box-5-c 5s 11s linear;
 }
 .box-5-n {
   width: 13px;
@@ -493,6 +558,7 @@ section {
   color: black;
   top: -69px;
   left: 387px;
+  animation: box-5-n 5s 11s linear;
 }
 .box-5-t {
   width: 240px;
@@ -502,6 +568,7 @@ section {
   top: -69px;
   left: 407px;
   opacity: 0;
+  animation: box-5-t 5s 11s linear;
 }
 /* контейнер 6 */
 .box-6 {
@@ -533,6 +600,16 @@ section {
   animation: box-6-img 1s linear infinite;
   animation-play-state: running;
 }
+.box-6-nt {
+  height: 38px;
+  width: 265px;
+  background: black;
+  top: 444px;
+  left: 361px;
+  opacity: 0;
+  position: relative;
+  animation: box-6-nt 5s 14s linear;
+}
 .box-6-c {
   height: 10px;
   width: 10px;
@@ -541,23 +618,26 @@ section {
   top: 436px;
   left: 354px;
   position: absolute;
+  animation: box-6-c 5s 14s linear;
 }
 .box-6-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 452px;
+  top: 443px;
   left: 382px;
+  animation: box-6-n 5s 14s linear;
 }
 .box-6-t {
   width: 240px;
   position: absolute;
   font-size: 24px;
   color: white;
-  top: 452px;
+  top: 443px;
   left: 400px;
   opacity: 0;
+  animation: box-6-t 5s 14s linear;
 }
 /* контейнер 7 */
 .box-7 {
@@ -606,6 +686,16 @@ section {
   left: -4px;
   position: absolute;
 }
+.box-7-nt {
+  height: 38px;
+  width: 240px;
+  background: white;
+  top: 829px;
+  left: 108px;
+  opacity: 0;
+  position: relative;
+  animation: box-7-nt 5s 16s linear;
+}
 .box-7-c {
   height: 10px;
   width: 10px;
@@ -614,6 +704,7 @@ section {
   top: 819px;
   left: 140px;
   position: absolute;
+  animation: box-7-c 5s 16s linear;
 }
 .box-7-n {
   width: 13px;
@@ -622,6 +713,7 @@ section {
   color: black;
   top: 840px;
   left: 115px;
+  animation: box-7-n 5s 16s linear;
 }
 .box-7-t {
   width: 240px;
@@ -631,6 +723,7 @@ section {
   top: 840px;
   left: 130px;
   opacity: 0;
+  animation: box-7-t 5s 16s linear;
 }
 /* контейнер 8 */
 .box-8 {
@@ -668,6 +761,16 @@ section {
   left: 107px;
   position: absolute;
 }
+.box-8-nt {
+  height: 38px;
+  width: 170px;
+  background: #0092FF;
+  top: 305px;
+  left: 529px;
+  opacity: 0;
+  position: relative;
+  animation: box-8-nt 5s 17s linear;
+}
 .box-8-c {
   height: 10px;
   width: 10px;
@@ -676,31 +779,34 @@ section {
   top: 299px;
   left: 523px;
   position: absolute;
+  animation: box-8-c 5s 17s linear;
 }
 .box-8-n {
   width: 13px;
   position: absolute;
   font-size: 24px;
   color: black;
-  top: 311px;
+  top: 306px;
   left: 548px;
+  animation: box-8-n 5s 17s linear;
 }
 .box-8-t {
   width: 240px;
   position: absolute;
   font-size: 24px;
   color: white;
-  top: 311px;
+  top: 306px;
   left: 566px;
   opacity: 0;
+  animation: box-8-t 5s 17s linear;
 }
 /* контейнер без великана 10 */
 .box-10 {
   height: 58px;
-  width: 623px;
-  border: 1px solid black;
+  width: 505px;
+  border: 3px solid black;
   top: -2183px;
-  left: 819px;
+  left: 939px;
   position: relative;
   padding: 15px 0;
   margin-bottom: 10px;
@@ -711,15 +817,19 @@ section {
   position: relative;
   font-size: 24px;
   color: black;
-  animation: box-10-text 5s linear infinite;
+  opacity: 0;
+}
+.box-10-text:hover {
+  animation: box-10-text 4s linear infinite;
+  animation-play-state: running;
 }
 .box-10-shelf {
   height: 18px;
   width: 790px;
   background: black;
-  top: 48px;
-  left: -150px;
-  position: absolute;
+  top: -4px;
+  left: 0;
+  position: relative;
 }
 /* футер */
 .section-3 {
@@ -768,7 +878,7 @@ section {
 @keyframes sign-text {
   30% {color: black;}
 }
-/* полка + фигурка */
+/* контейнер 1 */
 @keyframes box-1-shelf {
   0%, 100% {top: 133px;}
   25% {top: 110px;}
@@ -779,31 +889,28 @@ section {
   25% {top: 71px;}
   50% {top: 119px;}
 }
-/* подпись_1 */
+@keyframes box-1-nt {
+  3%, 100% {opacity: 1;}
+}
 @keyframes box-1-c {
   3%, 100% {height: 15px; width: 15px; background: #0092FF;}
 }
 @keyframes box-1-n {
-  10%, 100% {color: white; padding: 6px 120px 10px 14px; background: #0092FF;}
+  10%, 100% {color: white;}
 }
 @keyframes box-1-t {
   10%, 100% {opacity: 1;}
 }
-/* подпись_2 */
-@keyframes box-2-c {
-  3%, 100% {height: 15px; width: 15px;}
+@keyframes box-1-h-c-1 {
+  0%, 100% {opacity: 1;}
 }
-@keyframes box-2-n {
-  10%, 100% {color: white; padding: 6px 133px 10px 14px; background: black;}
-}
-@keyframes box-2-t {
-  3%, 100% {opacity: 1;}
-}
-/* подпись_3 */
+/* контейнер_3 */
 @keyframes box-3-t {
   0%, 100% {opacity: 1;}
 }
-/* великан_контейнер 3 */
+@keyframes box-3-img-1 {
+    0%, 100% {opacity: 1;}
+  }
 @keyframes box-3-img-2 {
   0%, 100% {opacity: 1;}
 }
@@ -843,6 +950,18 @@ section {
 @keyframes w-5 {
   80%, 100% {opacity: 1;}
 }
+@keyframes box-2-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-2-c {
+  3%, 100% {height: 15px; width: 15px;}
+}
+@keyframes box-2-n {
+  10%, 100% {color: white;}
+}
+@keyframes box-2-t {
+  3%, 100% {opacity: 1;}
+}
 /* контейнер 4 */
 @keyframes box-4-img-1 {
   0% {opacity: 1;}
@@ -869,6 +988,19 @@ section {
   49% {opacity: 1;}
   50%, 100% {transform: rotate(110deg); opacity: 0; left: 210px;}
 }
+@keyframes box-4-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-4-c {
+  3%, 100% {height: 15px; width: 15px;}
+}
+@keyframes box-4-n {
+  10%, 100% {color: black;}
+}
+@keyframes box-4-t {
+  3%, 100% {opacity: 1;}
+}
+/* контейнер 9 */
 @keyframes box-9 {
   5%, 100% {border: 3px solid black;}
 }
@@ -876,6 +1008,7 @@ section {
   0% {transform: translate(60px, 0); opacity: 1;}
   100% {transform:translate(-100%, 0);opacity: 1;}
 }
+/* контейнер 5 */
 @keyframes box-5-img-1 {
   0%, 49% {opacity: 1;}
   50%, 100% {opacity: 0;}
@@ -884,6 +1017,19 @@ section {
   0%, 49% {opacity: 0;}
   50%, 100% {opacity: 1;}
 }
+@keyframes box-5-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-5-c {
+  3%, 100% {height: 15px; width: 15px; background: #0092FF;}
+}
+@keyframes box-5-n {
+  10%, 100% {color: white;}
+}
+@keyframes box-5-t {
+  3%, 100% {opacity: 1;}
+}
+/* контейнер 6 */
 @keyframes box-6-circle {
   0%, 100% {background: black;}
 }
@@ -891,6 +1037,19 @@ section {
   0%, 100% {top: 219px;}
   50% {top: 160px;}
 }
+@keyframes box-6-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-6-c {
+  3%, 100% {height: 15px; width: 15px;}
+}
+@keyframes box-6-n {
+  10%, 100% {color: white;}
+}
+@keyframes box-6-t {
+  3%, 100% {opacity: 1;}
+}
+/* контейнер 7 */
 @keyframes box-7-img-1 {
   0% {transform: rotate(0);}
   100% {transform: rotate(360deg);}
@@ -905,6 +1064,16 @@ section {
   0%, 100% {left: 94px;}
   50% {left: 362px;}
 }
+@keyframes box-7-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-7-c {
+  3%, 100% {height: 15px; width: 15px;}
+}
+@keyframes box-7-t {
+  3%, 100% {opacity: 1;}
+}
+/* контейнер 8 */
 @keyframes box-8-img-1 {
   0%, 100% {opacity: 0;}
 }
@@ -914,7 +1083,20 @@ section {
 @keyframes box-8-circle {7% {background: white; top: 349px; left: 123px;}
   100% {background: white; top: 122px; left: 785px;}
 }
+@keyframes box-8-nt {
+  3%, 100% {opacity: 1;}
+}
+@keyframes box-8-c {
+  3%, 100% {height: 15px; width: 15px; background: #0092FF;}
+}
+@keyframes box-8-n {
+  10%, 100% {color: white;}
+}
+@keyframes box-8-t {
+  3%, 100% {opacity: 1;}
+}
+/* контейнер 10 */
 @keyframes box-10-text {
-  0% {transform: translate(0, 0);}
-  100% {transform:translate(-100%, 0);}
+  0% {transform: translate(0, 0); opacity: 1;}
+  100% {transform:translate(-100%, 0); opacity: 1;}
 }
