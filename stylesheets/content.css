@@ -309,7 +309,7 @@ section {
   position: absolute;
   font-size: 24px;
   color: black;
-  top: -52px;
+  top: -58px;
   left: 74px;
   animation: box-2-n 5s 6.5s linear;
 }
@@ -318,7 +318,7 @@ section {
   position: absolute;
   font-size: 24px;
   color: white;
-  top: -52px;
+  top: -58px;
   left: 95px;
   opacity: 0;
   animation: box-2-t 5s 6.5s linear;
